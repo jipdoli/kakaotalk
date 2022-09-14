@@ -1,0 +1,52 @@
+body {
+  background-color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  height: 100vh;
+}
+h1 {
+  font-size: 50px;
+  margin: 40px;
+  text-align: center;
+}
+.frame1,
+.frame2 {
+  position: relative;
+  top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.color_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  background-color: tomato;
+  height: 31.5vh;
+  width: 18.5vh;
+  border: 8px solid white;
+  margin: 10px;
+}
+.color_name {
+  background-color: white;
+  position: relative;
+  top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 25px 0px;
+}
+.color_number {
+  background-color: white;
+  position: relative;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 25px 0px;
+}
+.frame1 > .color_box:nth-child(2) {
+  background-color: teal;
+}
+.frame2 > .color_box:nth-child(1) {
+  background-color: burlywood;
+}
+.frame2 > .color_box:nth-child(2) {
+  background-color: thistle;
+}

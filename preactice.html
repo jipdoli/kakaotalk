@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Animation</title>
+    <style>
+      @keyframes rotatingdot {
+        0% {
+        }
+        50% {
+          transform: rotate(0.5turn);
+        }
+        100% {
+          transform: rotate(0.5turn);
+        }
+      }
+      @keyframes rectangle {
+        0% {
+        }
+        25% {
+          transform: scaleY(2);
+        }
+        50% {
+          transform: scaleY(1);
+        }
+        100% {
+        }
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 92vh;
+        width: 92vh;
+        background-color: #6bbcbe;
+      }
+      .flex_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 180px;
+        height: 180px;
+        margin: 50px;
+        transition: all 0.4s linear;
+      }
+      .dot {
+        background-color: white;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+      }
+      .rectangle {
+        background-color: white;
+        width: 26px;
+        height: 110px;
+        transition: all 0.2s ease-in-out;
+        animation: rectangle 1s ease-out infinite;
+      }
+      .rectangle:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .rectangle:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .rectangle:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .rectangle:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      .dot_box {
+        animation: rotatingdot 1s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="flex_box dot_box">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="flex_box">
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+        <div class="rectangle"></div>
+      </div>
+    </div>
+  </body>
+</html>

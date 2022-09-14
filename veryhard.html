@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: whitesmoke;
+        font-family: "Times New Roman", Times, serif;
+        height: 100vh;
+      }
+      #dd {
+        position: relative;
+        top: 35px;
+      }
+      h1 {
+        font-size: 50px;
+        margin: 40px;
+        text-align: center;
+      }
+      .name {
+        bottom: 13px;
+        position: relative;
+        font-size: 28px;
+      }
+      .number {
+        bottom: 13px;
+        position: relative;
+        font-size: 28px;
+      }
+      .column {
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 33vh;
+        width: 20vh;
+        margin: 10px;
+      }
+      .color {
+        background-color: tomato;
+        width: 18.5vh;
+        height: 31.5vh;
+      }
+      .column > .box:nth-child(2) {
+        background-color: teal;
+      }
+      .text {
+        font-weight: bold;
+        top: 25px;
+        position: relative;
+        background-color: white;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Best Colors</h1>
+
+    <div id="dd">
+      <div class="column">
+        <div class="box">
+          <div class="color">
+            <div class="text">
+              <div class="name">Tomato</div>
+              <div class="number">#FF6347</div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="color">
+            <div class="text">
+              <div class="name">Teal</div>
+              <div class="number">#008080</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box">
+          <div class="color">
+            <div class="text">
+              <div class="name">Burlywood</div>
+              <div class="number">#DEB887</div>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="color">
+            <div class="text">
+              <div class="name">Thistle</div>
+              <div class="number">#D7BFD7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
